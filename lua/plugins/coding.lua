@@ -48,25 +48,25 @@ return {
     },
   },
   -- M: 代码校验
-  {
-    "mfussenegger/nvim-lint",
-    opts = {
-      events = {
-        "BufWritePost",
-        "BufReadPost",
-        "InsertLeave",
-        "TextChanged",
-      },
-      linters_by_ft = {
-        javascript = { "eslint_d" },
-        javascriptreact = { "eslint_d" },
-        typescript = { "eslint_d" },
-        typescriptreact = { "eslint_d" },
-        vue = { "eslint_d" },
-        html = { "eslint_d" },
-      },
-    },
-  },
+  -- {
+  --   "mfussenegger/nvim-lint",
+  --   opts = {
+  --     events = {
+  --       "BufWritePost",
+  --       "BufReadPost",
+  --       "InsertLeave",
+  --       "TextChanged",
+  --     },
+  --     linters_by_ft = {
+  --       javascript = { "eslint_d" },
+  --       javascriptreact = { "eslint_d" },
+  --       typescript = { "eslint_d" },
+  --       typescriptreact = { "eslint_d" },
+  --       vue = { "eslint_d" },
+  --       html = { "eslint_d" },
+  --     },
+  --   },
+  -- },
   -- M: <c-i> 触发补全
   {
     "hrsh7th/nvim-cmp",

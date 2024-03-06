@@ -42,18 +42,21 @@ return {
     opts = {
       lsp_fallback = true,
       ensure_installed = {
-        -- lsp
+        -- [[ lsp ]]
         "lua-language-server",
-        -- "typescript-language-server",
-        "vue-language-server",
+        "typescript-language-server",
+        -- "vue-language-server",
+        "json-lsp",
+        "vetur-vls",
+        "eslint-lsp",
         "html-lsp",
         "css-lsp",
-        -- formatter
+        -- [[ formatter ]]
         "prettierd",
         "stylua", -- lua
         "shfmt", -- sh
-        -- linter
-        "eslint_d",
+        -- [[ linter ]]
+        -- "eslint_d",
       },
     },
   },
@@ -78,24 +81,6 @@ return {
           require("flash").treesitter()
         end,
         desc = "Flash Treesitter",
-      },
-    },
-  },
-  {
-    "neovim/nvim-lspconfig",
-    opts = {
-      servers = {
-        -- volar 开启 take over 模式
-        volar = {
-          filetypes = {
-            "typescript",
-            "javascript",
-            "javascriptreact",
-            "typescriptreact",
-            "vue",
-            "json",
-          },
-        },
       },
     },
   },
